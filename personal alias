@@ -1,0 +1,117 @@
+# Personal Alias File
+
+
+#File Manager
+alias naut='gksudo nautilus'
+alias dolph='sudo dolphin'
+
+alias synap='su synaptic'
+
+alias su='sudo'
+
+#Conky
+alias colorconk='~/Conky/color'
+alias todo='gedit ~/Conky/todo.txt'
+
+#Open file for viewing in correct program
+alias go='gnome-open'
+
+#Cleaning
+#alias cleanup='echo "Cleaning Up" &&
+#sudo apt-get -f install &&
+#sudo apt-get autoremove &&
+#sudo apt-get -y autoclean' 
+#alias logs='sudo find /var/log -type f -name"*.gz" -delete'
+
+#List /and/or Clean kernels
+alias kernel="dpkg --list | egrep -i --color 'linux-image|linux-headers'"
+#remove unwanted kernels
+sudo apt-get --purge remove linux-image-3.13.0-67-generic
+
+#Screenshot
+alias shot='gnome-screenshot'
+
+#Funny quote
+alias fortune='fortune | cowsay'
+
+#Floppy Drive
+alias flopop='su mdir a:'
+alias flopcop='su mcopy -s a:/* ./flopfiles'
+
+#Directory changes
+alias doc='cd ~/Documents/ && ls'
+alias down='cd ~/Downloads/ && ls'
+alias change='source change'
+
+#Kmymoney
+alias kmy='kmymoney'
+
+#Subtitle Fetcher
+alias subs='subliminal download -l en'
+
+#Ink
+# 	show amount of each colour left
+alias ink='sudo escputil -i -r /dev/usb/lp0'
+# 	clean spotty printing
+alias cleanink='sudo escputil -c -r /dev/usb/lp0'
+
+#Dropshipping
+alias drop='go ~/Documents/Dropshipping/Dropshipping.ods'
+alias dropP='go ~/Documents/Dropshipping/dropProcess.ott'
+alias dropC='go ~/Documents/Dropshipping/dropComplete.ott'
+
+#Progress of moving files
+alias prog='rsync --progress -ravz -cp'  #prog[filename]
+
+#CD ripping
+alias getrip='abcde -a cddb,read,encode,tag,move,playlist,clean -d /dev/cdrom -o mp3 -V -x'
+
+alias webbetty='betty turn web mode on'
+
+#Update/Upgrade/Install
+alias update='echo -e "\e[33mGetting Updates.\e[0m" && sudo apt-get update && sudo apt-get upgrade'
+alias gimme='sudo apt-get install'
+
+alias sr='surfraw'
+
+alias play='nvlc /media/myklmar/MUSIC/mymusic/ -Z'
+
+alias defrag='su e4defrag -c /'
+
+#Root Kit Hunter
+alias rkhunter='sudo rkhunter -c'
+
+#Translate
+alias strans='strans'
+
+#No GUI web browser
+alias w3m='w3m https://google.com'
+
+# Connect to Freenode:/connect freenode /join #{channel name} 
+# /msg nickserv identify {mykl1949}
+# check for channels at...http://irc.netsplit.de/channels/?net=freenode
+alias weechat='weechat && /connect freenode'
+
+#Find any song
+alias findsong='instantmusic'
+
+
+#shellcheck....script to check if scripts have mistakes
+alias shellcheck='~/.cabal/bin/shellcheck'
+
+# Check what a command does and decide if you want it carried out
+alias maybe='maybe'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
